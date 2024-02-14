@@ -1,0 +1,120 @@
+/* final-question.css */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.final-question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  height: 90vh;
+  text-align: center;
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.final-question-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.final-question-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e60026;
+  margin-top: -10px;
+}
+
+.final-question-text {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 30px;
+}
+
+.response-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.yes-button {
+  background-color: #e60026;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.no-button {
+  background-color: #fff;
+  color: #e60026;
+}
+
+/* Add hover effect for buttons if desired */
+.response-button:hover {
+  background-color: #d40022;
+}
+
+/* Media queries for specific screen sizes */
+@media (max-width: 768px) {
+  .final-question-title {
+    font-size: 1.5rem;
+  }
+
+  .final-question-text {
+    font-size: 1.2rem;
+  }
+
+  .response-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .final-question-title {
+    font-size: 1.3rem;
+  }
+
+  .final-question-text {
+    font-size: 1.1rem;
+  }
+
+  .response-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .final-question-title {
+    font-size: 1.2rem;
+  }
+
+  .final-question-text {
+    font-size: 1rem;
+  }
+
+  .response-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .final-question-title {
+    font-size: 1.1rem;
+  }
+
+  .final-question-text {
+    font-size: 0.9rem;
+  }
+
+  .response-button {
+    font-size: 0.9rem;
+  }
+}

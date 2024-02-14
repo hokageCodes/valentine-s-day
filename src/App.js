@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import StoryApp from './components/StoryApp';
+import CardMusic from './components/thank-you/know-much.mp3';
 
 function App() {
+  useEffect(() => {
+    // Start playing the audio once the app loads
+    const audio = new Audio(CardMusic);
+    audio.loop = true;
+    audio.play();
+
+    // Cleanup audio when the component is unmounted (app is closed)
+    return () => audio.pause();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <StoryApp />
     </div>
   );
 }

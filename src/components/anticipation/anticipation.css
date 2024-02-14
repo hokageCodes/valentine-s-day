@@ -1,0 +1,106 @@
+/* anticipation.css */
+.anticipation-container {
+  text-align: center;
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.anticipation-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.anticipation-title {
+  margin-top: -10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e60026;
+  line-height: 35px;
+}
+
+.anticipation-text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 30px;
+}
+
+.anticipation-button {
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e60026;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.anticipation-button:hover {
+  background-color: transparent;
+  border: 1px solid #e60026;
+  color: #e60026;
+}
+
+/* Media queries for specific screen sizes */
+@media (max-width: 768px) {
+  .anticipation-title {
+    font-size: 1.5rem;
+  }
+
+  .anticipation-text {
+    font-size: 1.2rem;
+  }
+
+  .anticipation-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .anticipation-title {
+    font-size: 1.3rem;
+  }
+
+  .anticipation-text {
+    font-size: 1.1rem;
+  }
+
+  .anticipation-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .anticipation-title {
+    font-size: 1.2rem;
+  }
+
+  .anticipation-text {
+    font-size: 1rem;
+  }
+
+  .anticipation-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .anticipation-title {
+    font-size: 1.1rem;
+  }
+
+  .anticipation-text {
+    font-size: 0.9rem;
+  }
+
+  .anticipation-button {
+    font-size: 0.9rem;
+  }
+}

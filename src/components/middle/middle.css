@@ -1,0 +1,61 @@
+/* middle.css */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.middle-container {
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8; /* White-ish background */
+}
+
+.middle-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #e60026; /* Valentine red text color */
+}
+
+.aspect-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #e60026; /* Valentine red indicator color */
+}
+
+.aspect-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #555; /* Darker gray text color */
+}
+
+.next-button {
+  background-color: #e60026; /* Valentine red button color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #d40022; /* Slightly darker red on hover */
+}
